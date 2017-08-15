@@ -11,96 +11,11 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>SMathpreview</title>
     </head>
     <body>
-        <div class="header">
-            <img src="logo.svg" alt="">Smath version alpha 2.0.3 #2000- Last update : TUE 2017-02-21, 20:55
-        </div>
-        <div class="left-tool-bar">
-            <button class="" id="new_layer">+</button>
-            <!--<button class="">...</button>-->
-            <button class="" id="zoom-more">&#128269;</button>
-            <button class="" id="zoom-less">&#128269;</button>
-            <button class="" id="pen-tool">&#128393;</button>
-            <button id="need-help">?</button>
-        </div>
+        <iframe src="SMath/index.html" style="width:100%;height:100%;top:0;left:0;right:0;bottom:0;position:fixed;border:none;" frameborder="0">
 
-        <div class="right-tool-bar">
-            <div class="color-view">
-                <input type="color" class="color-picker">
-            </div>
-            <div class="container">
-                <div class="options">
-                    <span class="layer active">Calques et fonctions</span>
-                </div>
-                <div class="layer-function-view">
-                    <div class="layer">
-                        <div class="preview"></div>
-                        <span class="layer-name">Grid</span><button>&#128274;</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="options">
-                    <span class="layer active">Affichage</span>
-                    <span class="functions">Paramètres</span>
-                </div>
-                <div class="view">
-                    <label for="Interval">Intervalle : <input type="number" value="50" id="Interval" />pixels</label>
-                    <span><br />Zoom : <span id="zoom-level">1</span></span><br /><a href="#zoom=50;--">Paramètres par défaut (supprime toutes les fonctions)</a>
-                    <button class="apply" id="apply_zoom">Appliquer</button>
-                </div>
-            </div>
-            <div class="container pencil-tool-board" style="display: none;">
-                <div class="options">
-                    <span class="layer active">Outil ligne</span>
-                </div>
-                <div class="view">
-                    Type de ligne : <select name="" id="line-type">
-                        <option value="h">Horizontale</option>
-                        <option value="v">Verticale</option>
-                        <option value="o">Oblique</option>
-                    </select>
-                    <br />
-                </div>
-            </div>
-
-            <br /><br />
-            Copyright &copy; 2017 Simon Loir
-            <p>Ce programme est un programme libre, vous pouvez retrouver ses sources sur <a href="https://github.com/SimonLoir/Math-traceur-de-fonctions" style="color:Crimson;">Github</a></p>
-        </div>
-        <div class="draw-area">
-            <div class="canvas">
-                <canvas id="layer-grid"></canvas>
-            </div>
-        </div>
-        <div class="action" style="display: none;" id="ftrace_dialog">
-            <div class="action-header">Tracer quelque chose</div>
-            <div class="action-content">
-                <p>
-
-                    Entrez une expression :
-                    <br />
-                    <input type="text"><br /><br />
-                    Exemple : <br />
-                    vect[(x;y)-(x;y)+3(x;y)] ou vect[(x;y)] ou ou vect[3(x;y)]<br />
-                    x² ou (x-0)²+0 ou ax²-bx+c
-
-                </p>
-            </div>
-            <div class="btn-group"><button id="ftrace">Valider</button><button id="fcancel">Annuler</button></div>
-        </div>
-        <div class="popup-start">
-            &#8592; Cliquez ici pour tracer quelque chose
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
-        <script type="text/javascript" src="scripts/index.js"></script>
-        <script src="extjs.js"></script>
-        <script src="Smath.js"></script>
-        <script src="app-v2.js"></script>
+        </iframe>
     </body>
 </html>

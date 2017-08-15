@@ -3,7 +3,6 @@
   <name>SMath-preview</name>
   <description>A blank project that uses Apache Cordova to help you build an app that targets multiple mobile platforms: Android, iOS, and the Windows Universal Platform.</description>
   <author href="http://cordova.io" email="dev@cordova.apache.org">Apache Cordova Team</author>
-  <vs:is-from-base-template>true</vs:is-from-base-template>
   <vs:template-name>BlankJS</vs:template-name>
   <vs:toolsetVersion>6.3.1</vs:toolsetVersion>
   <engine name="android" spec="5.2.1" />
